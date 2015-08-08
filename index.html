@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+	<title>Gocart Marketing Portal</title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="static/css/logo.css">
+	<link rel="stylesheet" type="text/css" href="static/css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="static/css/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" type="text/css" href="static/css/jquery.fancybox-thumbs.css">
+</head>
+<body>
+	<div id="loader">
+		<img src="static/img/Preloader.gif" alt="">
+	</div>
+	<!--HEADER-->
+	<header>
+		<div class="container" style="padding-bottom:3%">
+			<div class="icon-gocart_logo_word gocart-header-logo"></div>
+			<!--MENU-->
+			<a href="index.html" id="responsive-menu-button"><i class="fa fa-bars"></i></a>
+			<nav class="menu">
+				<ul class="list-inline">
+					<li><a href="#">Home</a></li>
+					<li><a href="#inline" class="fancybox">Add User</a></li>
+				</ul>
+			</nav>
+			<!--END MENU-->
+		</div>	
+	</header>
+	<!--END HEADER-->
+
+	<!--MAIN SECTION-->
+	<div class="gallery"  id="masonry">
+		
+		<!--CONTENT GRID-->
+		<div class="container" style="padding-bottom:5em;">
+			<div class="row" id="user-box">
+			</div>
+			<div class="row"></div>
+					<div class="content" id="inline" style="display:none;">
+						<h3>Add User</h3>
+						<p>Please fill up the following form.</p>
+						<div class="alert alert-danger alert-dismissible" style="margin-top:1em;" role="alert" id="user-error">
+						  	<button type="button" class="close" data-dismiss="alert" >&times;</button>
+						  	<strong>Error!</strong> Change a few things up and try submitting again.
+						</div>
+
+						<div class="alert alert-success alert-dismissible" style="margin-top:1em;" id="user-success">
+						  	<button type="button" class="close" data-dismiss="alert">&times;</button>
+						  	<strong>Done!</strong> User was created succssfully!
+						</div>
+						<!--CONTACT FORM-->
+						<form id="contact" name="contact">
+							<div class="row">
+								<div class="col-md-6 col-sm-12">
+							      	<input type="text" class="form-control" name="name" id="name" placeholder="Name*" required>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+							      	<input type="email"  class="form-control" name="email" id="email" placeholder="Email*" required>
+							    </div>
+						    </div>
+						    <div class="row">
+								<div class="col-md-6 col-sm-12">
+							      	<input type="text" class="form-control" name="username" id="username" placeholder="Username*" required>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+							      	<input type="password"  class="form-control" name="password" id="password" placeholder="Password*" required>
+							    </div>
+						    </div>
+						    <div class="row">
+							    <div class="col-md-12 col-sm-12">
+								    <div class="input-group">
+						                <span class="input-group-btn">
+						                    <span class="btn btn-info btn-file" style="margin:0;">
+						                        Upload&hellip; <input type="file" id="prof-pic" name="prof-pic" multiple>
+						                    </span>
+						                </span>
+						                <input type="text" class="form-control" placeholder="Profile Picture" readonly>
+		            				</div>
+	            				</div>
+						    </div>
+							<textarea class="form-control" name="about" id="about" placeholder="About" rows="10"></textarea>    		
+				    		<input class="btn btn-danger" type="submit" value="Submit" />
+				    	</form>
+				    	<!--END CONTACT FORM-->
+		</div>
+		<!--END CONTENT GRID-->
+	</div>
+	<!--END MAIN SECTION-->
+	
+	<!--FOOTER-->
+	<footer class="footer">
+		<div class="container">
+			<span class="icon-gocart_logo_word gocart-footer-logo"></span>
+		</div>
+	</footer>
+	<!--END FOOTER-->
+
+	<!-- The core React library -->
+	<script src="https://fb.me/react-0.13.3.js"></script>
+	<!-- In-browser JSX transformer, remove when pre-compiling JSX. -->
+	<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+
+	<script src="static/js/jquery-1.11.0.min.js"></script>
+	<script src="static/js/jquery-migrate-1.2.1.js"></script>
+	<script src="static/js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="static/js/jquery.fancybox.pack.js"></script>
+	<script src="static/js/jquery.fancybox-buttons.js"></script>
+	<script src="static/js/jquery.fancybox-media.js"></script>
+	<script src="static/js/jquery.fancybox-thumbs.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="static/js/smoothscroll.js"></script>
+	<script src="static/js/snap.svg-min.js"></script>
+	<script src="static/js/retina.min.js"></script>
+	<script src="static/js/imagesloaded.pkgd.min.js"></script>
+	<script src="static/js/masonry.pkgd.min.js"></script>
+	<script src="static/js/classie.js"></script>
+	<script src="static/js/modernizr.custom.js"></script>
+	<script src="static/js/cbpGridGallery.js"></script>
+	<script src="static/js/jquery.resizestop.min.js"></script>
+	<script src="static/js/doubletaptogo.js"></script>
+	<script src="static/js/fluidvids.js"></script>
+
+	<script src="static/js/main.js"></script>
+	<!-- Core functionality -->
+	<script type="text/jsx" src="static/js/core.js"></script>
+</body>
+</html>
+
